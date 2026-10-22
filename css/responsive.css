@@ -56,10 +56,7 @@
   section.sec{padding-top:40px}
   .cards{grid-template-columns:1fr;gap:18px}
   .card .body{padding:18px 16px 12px}
-  .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 16px 16px}
-  .act{min-width:0;white-space:nowrap;min-height:44px}
-  .act.map{grid-column:1/-1}
-  .act:only-child{grid-column:1/-1}
+  .actions{padding:0 16px 16px}
 
   /* mapa e rodapé */
   .mapbox{padding:22px;border-radius:20px;margin-top:40px}

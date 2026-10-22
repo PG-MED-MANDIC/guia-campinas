@@ -3,7 +3,7 @@ import {CHAPTERS} from '../data/chapters.js';
 import {PLACES} from '../data/places.js';
 import {LINKS} from '../data/links.js';
 import {$,$$,esc} from '../utils/dom.js';
-import {img,igUrl,mapUrl,mapsSearchUrl} from '../utils/urls.js';
+import {img,igUrl,mapUrl,mapsSearchUrl,wazeUrl} from '../utils/urls.js';
 import {ICON} from './icons.js';
 import {isFav} from '../modules/favorites.js';
 
@@ -40,6 +40,7 @@ function card(p){
    </div>
    <div class="actions">
      <a class="act map" target="_blank" rel="noopener" href="${mapUrl(p)}">${ICON.pin} Como chegar</a>
+     <a class="act waze" target="_blank" rel="noopener" href="${wazeUrl(p)}">${ICON.waze} Waze</a>
      ${L.ig?`<a class="act ig" target="_blank" rel="noopener" href="${igUrl(L.ig)}">${ICON.ig} Instagram</a>`:''}
      ${L.site?`<a class="act" target="_blank" rel="noopener" href="${esc(L.site)}">${ICON.web} Site</a>`:''}
    </div>

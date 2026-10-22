@@ -28,11 +28,15 @@
 .tip{background:color-mix(in srgb,var(--gold) 16%,var(--card));border-radius:12px;padding:10px 12px;font-size:.88rem}
 .addr{display:flex;gap:8px;align-items:flex-start;font-size:.88rem;color:var(--muted);margin-top:auto;padding-top:6px}
 .addr svg{flex:none;margin-top:2px;color:var(--gold-2)}
-.actions{display:flex;gap:8px;flex-wrap:wrap;padding:0 20px 20px}
-.act{flex:1;min-width:100px;display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:12px;padding:10px 12px;font:600 .86rem Inter;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--chip);transition:.15s}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 20px 20px}
+.actions .act:last-child:nth-child(odd){grid-column:1/-1}
+.act{min-width:0;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:12px;padding:10px 12px;font:600 .86rem Inter;text-decoration:none;border:1px solid var(--line);color:var(--ink);background:var(--chip);transition:.15s}
 .act:hover{border-color:var(--navy);transform:translateY(-1px)}
 .act.map{background:var(--navy);color:#fff;border-color:var(--navy)}
 .act.ig{background:linear-gradient(45deg,#f9ce34,#ee2a7b 55%,#6228d7);color:#fff;border:0}
 .act svg{width:17px;height:17px}
 .empty{display:none;text-align:center;padding:40px;color:var(--muted)}
 .facts li.tip{border:0}
+.act.waze{background:#33ccff;color:#06243a;border-color:#33ccff;font-weight:700;box-shadow:0 6px 14px -8px rgba(51,204,255,.9)}
+.act.waze:hover{background:#5ad8ff;border-color:#5ad8ff}
+.act.waze .waze-i{width:20px;height:20px;stroke-width:1.8}

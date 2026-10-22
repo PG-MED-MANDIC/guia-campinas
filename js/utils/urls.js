@@ -10,4 +10,10 @@ export const mapQ=p=>{
   return (L.maps||(L.addr?p.name+', '+L.addr:p.name+', Campinas - SP')).replace(/ · /g,', ');
 };
 export const mapUrl=p=>mapsSearchUrl(mapQ(p));
+// Waze: usa coordenadas quando existem (ponto exato); senão busca pelo texto.
+export const wazeUrl=p=>{
+  const L=LINKS[p.id]||{};
+  const dest=L.ll?'ll='+encodeURIComponent(L.ll):'q='+encodeURIComponent(mapQ(p));
+  return 'https://waze.com/ul?'+dest+'&navigate=yes';
+};
 export const routeUrl=places=>'https://www.google.com/maps/dir/'+places.map(p=>encodeURIComponent(mapQ(p))).join('/');
