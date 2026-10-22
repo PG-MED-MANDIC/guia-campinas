@@ -1,0 +1,33 @@
+# Sistema operacional / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/
+
+# Claude Code (configuração e memória locais)
+.claude/
+CLAUDE.local.md
+
+# Segredos e configuração local (nunca versionar)
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+secrets.*
+credentials*.json
+
+# Dependências, builds e logs
+node_modules/
+dist/
+*.log
+
+# Arquivos temporários e de teste local
+_*.html
+*.tmp
+*.bak
+
+# Uso local apenas
+servidor.bat

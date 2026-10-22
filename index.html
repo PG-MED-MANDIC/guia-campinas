@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guia Campinas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<meta name="description" content="Guia Campinas da São Leopoldo Mandic: shoppings, hotéis, passeios, cultura e restaurantes para os alunos.">
+<meta property="og:title" content="Guia Campinas · São Leopoldo Mandic">
+<meta property="og:image" content="img/p1_1.jpg">
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<div class="topbar"><div class="in">
+  <a class="brand" href="#capa"><img data-img="logo" alt="São Leopoldo Mandic"><span>Guia Campinas</span></a>
+  <nav class="toc" id="toc"></nav>
+  <button class="iconbtn" id="favBtn" title="Meu roteiro" aria-label="Meu roteiro"><svg class="i" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg><span class="badge" id="favCount">0</span></button>
+  <button class="iconbtn" id="themeBtn" title="Tema claro/escuro" aria-label="Alternar tema"><svg class="i" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</div></div>
+
+<header class="cover" id="capa">
+  <div class="blob a" data-parallax="0.25"></div><div class="blob b" data-parallax="-0.15"></div><div class="blob c" data-parallax="0.35"></div>
+  <div class="in">
+    <div>
+      <span class="kicker">São Leopoldo Mandic · Campinas</span>
+      <h1>Guia Campinas</h1>
+      <div class="script">Bem-vindos a Campinas</div>
+      <p class="lead">Shoppings, hotéis perto da faculdade, passeios de fim de semana e restaurantes para você aproveitar a cidade. Toque nos botões para abrir o mapa ou o Instagram de cada lugar.</p>
+      <div class="cta">
+        <a class="btn gold" href="#capitulos">Começar a leitura
+          <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#mapa">Ver todos no mapa</a>
+      </div>
+    </div>
+    <div class="photo" data-parallax="0.12">
+      <img data-img="p1_1" alt="Avenida em Campinas à noite">
+      <img class="logo" data-img="logo" alt="Logo São Leopoldo Mandic">
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <div class="index reveal" id="capitulos">
+    <span class="kicker">Sumário</span>
+    <h2>O que você vai encontrar</h2>
+    <div class="grid" id="chapGrid"></div>
+  </div>
+
+  <div class="welcome reveal">
+    <div class="photo-clip"><img data-img="p2_1" alt="Campus São Leopoldo Mandic Campinas" data-parallax="0.1"></div>
+    <div class="t">
+      <span class="kicker">Boas-vindas</span>
+      <h2>Bem-vindos à Faculdade <em>São Leopoldo Mandic</em>!</h2>
+      <p>Aqui, acreditamos que uma formação de excelência vai além da sala de aula — ela também envolve sentir-se bem, acolhido e à vontade em cada momento da sua jornada.</p>
+      <div class="cta" id="campusLinks"></div>
+    </div>
+  </div>
+</div>
+
+<div class="tools"><div class="wrap">
+  <label class="search"><svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input id="q" type="search" placeholder="Buscar lugar, bairro, comida…" aria-label="Buscar"></label>
+  <div class="chips" id="chips"></div>
+</div></div>
+
+<div class="wrap" id="content"></div>
+<div class="wrap"><div class="empty" id="empty">Nenhum lugar encontrado. Tente outra busca.</div></div>
+
+<div class="wrap">
+  <div class="mapbox reveal" id="mapa">
+    <div>
+      <span class="kicker">Mapa rápido</span>
+      <h2>Todos os lugares do guia</h2>
+      <p>Toque em um nome para abrir a rota no Google Maps a partir de onde você está.</p>
+    </div>
+    <ol id="mapList"></ol>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="blob" data-parallax="0.15"></div>
+  <div class="in">
+    <div class="brand-info">
+      <img data-img="logo" alt="São Leopoldo Mandic">
+      <div><b>Guia Campinas</b><small>São Leopoldo Mandic · 02/09/2026</small></div>
+    </div>
+    <small class="disclaimer">Horários, preços e endereços podem mudar. Confirme no Instagram ou site do lugar antes de ir.</small>
+  </div>
+</footer>
+
+<div class="lb" id="lb"><button class="x" aria-label="Fechar">×</button><button class="pv" aria-label="Anterior">‹</button><img alt=""><button class="nx" aria-label="Próxima">›</button><div class="cap"></div></div>
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer"><header><h3>Meu roteiro</h3><button class="iconbtn" id="closeDrawer" aria-label="Fechar">×</button></header><div class="list" id="favList"></div></aside>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

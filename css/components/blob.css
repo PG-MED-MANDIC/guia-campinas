@@ -1,0 +1,4 @@
+.blob{position:absolute;background:var(--sand);border-radius:42% 58% 63% 37% / 41% 44% 56% 59%}
+.blob.a{width:420px;height:380px;top:-170px;right:-120px}
+.blob.b{width:300px;height:260px;bottom:-200px;left:-170px}
+.blob.c{width:300px;height:260px;bottom:-150px;right:-90px;opacity:.95}

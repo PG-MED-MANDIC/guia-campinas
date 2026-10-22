@@ -1,0 +1,8 @@
+footer{margin-top:64px;background:var(--navy);color:#cfd4ee;position:relative;overflow:hidden}
+footer .in{max-width:1180px;margin:0 auto;padding:44px 16px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;position:relative;z-index:2}
+footer img{width:90px;height:90px;border-radius:18px;object-fit:cover}
+footer small{display:block;opacity:.8}
+footer .blob{width:300px;height:260px;right:-120px;bottom:-150px}
+footer .brand-info{display:flex;gap:18px;align-items:center}
+footer .brand-info b{color:#fff;font-family:Poppins}
+footer .disclaimer{max-width:420px}

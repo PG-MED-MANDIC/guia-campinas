@@ -1,0 +1,3 @@
+/* Elementos com parallax: will-change para suavidade; imagens ganham escala para não mostrar bordas ao se mover. */
+[data-parallax]{will-change:translate}
+.chap img[data-parallax],.welcome .photo-clip img{scale:1.2}

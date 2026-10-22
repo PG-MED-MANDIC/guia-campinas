@@ -1,0 +1,93 @@
+/* Tablet e abaixo */
+@media (max-width:900px){
+  .cover .in{grid-template-columns:1fr;gap:36px;padding-top:40px}
+  .cover .photo .logo{width:84px;height:84px;left:-6px;bottom:-22px}
+  .index .grid{grid-template-columns:repeat(2,1fr)}
+  .welcome{grid-template-columns:1fr}
+  .welcome .t{padding:26px}
+  .welcome .photo-clip{min-height:240px;max-height:320px}
+  .mapbox{grid-template-columns:1fr}
+  .brand span{display:none}
+  /* foto empilhada abaixo do texto: parallax a faria sobrepor os botões */
+  .cover .photo{translate:none!important}
+}
+
+/* Celular */
+@media (max-width:560px){
+  html{scroll-padding-top:120px}
+  .wrap,.cover .in,footer .in,.topbar .in{padding-left:16px;padding-right:16px}
+
+  /* topo */
+  .topbar .in{gap:10px;padding-top:8px;padding-bottom:8px}
+  .brand img{height:36px;width:36px}
+  .iconbtn{width:42px;height:42px}
+
+  /* capa: formas menores para não cobrir o texto */
+  .cover{min-height:auto}
+  .cover .in{padding-top:36px;padding-bottom:56px;gap:32px}
+  .blob.a{width:200px;height:180px;top:-110px;right:-90px}
+  .blob.b{display:none}
+  .blob.c{width:180px;height:160px;bottom:-100px;right:-70px}
+  .cover h1{font-size:clamp(2.4rem,13vw,3.2rem)}
+  .cover p.lead{font-size:1rem;margin:14px 0 22px}
+  .cta{flex-direction:column;align-items:stretch}
+  .cta .btn{justify-content:center}
+  .cover .photo img{transform:none}
+  .cover .photo .logo{width:72px;height:72px;left:12px;bottom:-18px;border-radius:18px}
+
+  /* sumário: lista de uma coluna, sem card órfão */
+  .index{padding-top:44px}
+  .index .grid{grid-template-columns:1fr;gap:12px}
+  .chap{min-height:104px;border-radius:16px}
+  .chap::before{background:linear-gradient(90deg,rgba(20,26,64,.92) 30%,rgba(20,26,64,.35))}
+  .chap h3{font-size:1.05rem}
+
+  /* boas-vindas */
+  .welcome{margin-top:28px;border-radius:20px}
+  .welcome .t{padding:22px}
+  .welcome .cta .btn{width:100%}
+
+  /* busca e filtros mais compactos */
+  .tools{top:58px;padding:8px 0;margin-top:20px}
+  .tools .wrap{gap:8px}
+  .chip{padding:8px 13px;min-height:38px}
+
+  /* cards */
+  section.sec{padding-top:40px}
+  .cards{grid-template-columns:1fr;gap:18px}
+  .card .body{padding:18px 16px 12px}
+  .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 16px 16px}
+  .act{min-width:0;white-space:nowrap;min-height:44px}
+  .act.map{grid-column:1/-1}
+  .act:only-child{grid-column:1/-1}
+
+  /* mapa e rodapé */
+  .mapbox{padding:22px;border-radius:20px;margin-top:40px}
+  .mapbox ol{columns:1}
+  .mapbox li a{padding:9px 8px}
+  footer{margin-top:44px}
+  footer .in{padding-top:32px;padding-bottom:32px;flex-direction:column;align-items:flex-start;gap:16px}
+  footer img{width:64px;height:64px;border-radius:14px}
+  footer .blob{display:none}
+
+  /* galeria e gaveta */
+  .lb{padding:12px}
+  .lb img{max-width:100%;max-height:76vh}
+  .lb .pv,.lb .nx{top:auto;bottom:16px}
+  .lb .pv{left:16px}.lb .nx{right:16px}
+  .lb .cap{bottom:30px;padding:0 70px;font-size:.88rem}
+  .drawer{width:100%}
+}
+
+/* Telas bem estreitas */
+@media (max-width:360px){
+  .cover h1{font-size:2.3rem}
+  .kicker{font-size:.72rem;letter-spacing:.14em}
+}
+
+/* Toque: sem efeitos de hover "presos" */
+@media (hover:none){
+  .card:hover,.chap:hover,.btn:hover,.act:hover{transform:none}
+  .card:hover .ph img,.chap:hover img{transform:none}
+  .mapbox li a:hover{padding-left:8px}
+}

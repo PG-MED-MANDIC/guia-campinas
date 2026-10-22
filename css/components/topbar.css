@@ -1,0 +1,14 @@
+/* progress + topbar */
+#progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--gold),#f08a24,#3d6bd8);width:0;z-index:60}
+.topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--navy) 94%,transparent);backdrop-filter:blur(10px);color:#fff}
+.topbar .in{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:10px 16px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Poppins;font-weight:700;letter-spacing:.2px;text-decoration:none;white-space:nowrap}
+.brand img{height:34px;width:34px;object-fit:cover;border-radius:8px}
+.toc{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1}
+.toc::-webkit-scrollbar{display:none}
+.toc a{font-size:.86rem;text-decoration:none;padding:7px 12px;border-radius:999px;color:#dfe3f5;white-space:nowrap;transition:.2s}
+.toc a:hover{background:rgba(255,255,255,.1);color:#fff}
+.toc a.on{background:var(--gold);color:var(--navy);font-weight:600}
+.iconbtn{background:rgba(255,255,255,.1);border:0;color:#fff;width:38px;height:38px;border-radius:10px;cursor:pointer;display:grid;place-items:center;flex:none;position:relative}
+.iconbtn:hover{background:rgba(255,255,255,.2)}
+.iconbtn .badge{position:absolute;top:-4px;right:-4px;background:var(--gold);color:var(--navy);font-size:.7rem;font-weight:700;border-radius:999px;min-width:18px;height:18px;display:grid;place-items:center;padding:0 4px}

@@ -1,0 +1,8 @@
+.mapbox{margin:56px 0 0;background:var(--navy);color:#fff;border-radius:24px;padding:28px;display:grid;grid-template-columns:1fr 1.4fr;gap:24px;align-items:center;position:relative;overflow:hidden}
+.mapbox h2{color:#fff;font-size:1.7rem}
+.mapbox p{color:#d6dbf0}
+.mapbox ol{margin:0;padding:0;list-style:none;columns:2;column-gap:18px}
+.mapbox li{break-inside:avoid;margin-bottom:8px}
+.mapbox li a{text-decoration:none;display:flex;gap:8px;align-items:center;font-size:.9rem;color:#e7eaf8;padding:6px 8px;border-radius:8px}
+.mapbox li a:hover{background:rgba(255,255,255,.08)}
+.dot{width:10px;height:10px;border-radius:50%;flex:none}

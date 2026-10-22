@@ -1,0 +1,6 @@
+.lb{position:fixed;inset:0;background:rgba(10,13,35,.92);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:84vh;border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.6)}
+.lb .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#fff;font-family:Poppins}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;width:46px;height:46px;border-radius:50%;cursor:pointer;font-size:1.4rem}
+.lb .x{top:18px;right:18px}.lb .pv{left:18px;top:50%}.lb .nx{right:18px;top:50%}

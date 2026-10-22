@@ -1,0 +1,14 @@
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(400px,100%);background:var(--card);z-index:90;box-shadow:-20px 0 50px rgba(0,0,0,.25);transform:translateX(105%);transition:transform .3s;display:flex;flex-direction:column}
+.drawer.on{transform:none}
+.drawer header{background:var(--navy);color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.drawer header h3{font-size:1.15rem}
+.drawer .list{padding:14px;overflow:auto;display:grid;gap:10px}
+.drawer .it{display:flex;gap:12px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:8px;text-decoration:none}
+.drawer .it img{width:64px;height:64px;border-radius:10px;object-fit:cover}
+.drawer .it b{display:block;font-size:.95rem}
+.drawer .it small{color:var(--muted)}
+.drawer .none{color:var(--muted);text-align:center;padding:30px 10px}
+.scrim{position:fixed;inset:0;background:rgba(10,13,35,.4);z-index:80;display:none}
+.scrim.on{display:block}
+.drawer .it .noimg{position:relative;width:64px;height:64px;flex:none;border-radius:10px;background:var(--navy);padding:10px}
+.drawer .btn{justify-content:center;margin-top:6px}
